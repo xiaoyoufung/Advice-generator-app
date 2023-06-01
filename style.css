@@ -1,0 +1,115 @@
+/* color */
+
+:root {
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* center */
+body, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* mobile */
+
+@media screen and (max-width: 600px) {
+    main {
+        height: 250px !important;
+        padding: 50px 0 !important;
+        border-radius: 12px !important;
+    }
+    main .quote {
+        width: 350px !important;
+    }
+
+    .normal-hr {
+        width: 135px !important;
+    }
+}
+
+body {
+    background-color: var(--DarkBlue);
+    min-height: 90vh;
+}
+
+main {
+    background-color: var(--DarkGrayishBlue);
+    position: relative;
+    padding: 3%;
+    border-radius: 16px;
+    justify-content: space-between;
+    height: 230px;
+}
+
+main .top {
+    letter-spacing: 3px;
+    color: var(--NeonGreen);
+    font-size: 15px;
+}
+
+main .quote {
+    width: 470px;
+}
+
+.quote {
+    font-size: 28px;
+    text-align: center;
+    color: var(--LightCyan);
+}
+
+.normal-hr {
+    background-color: var(--GrayishBlue) !important;
+    width: 190px;
+    margin: 0 20px;
+    border: none;
+    height: 1.5px;
+}
+
+.mid {
+    border: 3px solid var(--LightCyan);
+    border-radius: 2px;
+    width: 10px;
+    rotate: -90deg;
+    padding: 0;
+}
+
+.hr-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+#dice {
+    background-color: var(--NeonGreen);
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    position: absolute;
+    bottom: -30px;
+}
+
+#dice:hover {
+    box-shadow: 0px 0px 20px 1px var(--NeonGreen);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    color: var(--GrayishBlue);
+    position: absolute;
+    bottom: 0;
+    
+}
+.attribution a { 
+    color: var(--LightCyan); 
+}
