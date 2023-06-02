@@ -43,7 +43,7 @@ body {
 main {
     background-color: var(--DarkGrayishBlue);
     position: relative;
-    padding: 2.5%;
+    padding: 2%;
     border-radius: 16px;
     height: 280px;
 }
