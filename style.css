@@ -14,10 +14,8 @@
 
 /* center */
 body, main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
 }
 
 /* mobile */
@@ -45,16 +43,15 @@ body {
 main {
     background-color: var(--DarkGrayishBlue);
     position: relative;
-    padding: 3%;
+    padding: 2.5%;
     border-radius: 16px;
-    justify-content: space-between;
-    height: 230px;
+    height: 280px;
 }
 
 main .top {
     letter-spacing: 3px;
     color: var(--NeonGreen);
-    font-size: 15px;
+    font-size: 14px;
 }
 
 main .quote {
@@ -69,7 +66,7 @@ main .quote {
 
 .normal-hr {
     background-color: var(--GrayishBlue) !important;
-    width: 190px;
+    width: 200px;
     margin: 0 20px;
     border: none;
     height: 1.5px;
@@ -97,6 +94,8 @@ main .quote {
     border: none;
     position: absolute;
     bottom: -30px;
+    display: grid;
+    place-items: center;
 }
 
 #dice:hover {
