@@ -1,67 +1,67 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/012f1050b4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main>
+    <div class="top">
+      ADVICE #<span id="advice-id"></span>
+    </div>
     
-    <title>Frontend Mentor | Advice generator app</title>
 
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+    <div class="quote">
+      "<span id="advice-quote"></span>"
+    </div>
+    
+    <div class="hr-line">
+      <div>
+        <hr class="normal-hr">
+      </div>
+     
+      <div class="mid-hr">
+        <hr class="mid">
+      </div>
 
-     <!-- font awesome -->
-     <script src="https://kit.fontawesome.com/012f1050b4.js" crossorigin="anonymous"></script>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <link rel="stylesheet" href="style.css">
-  </head>
-
-  <body>
-
-    <main>
-      <div class="top">
-        ADVICE #<span id="advice-id"></span>
+      <div class="mid-hr">
+        <hr class="mid">
       </div>
       
-
-      <div class="quote">
-        "<span id="advice-quote"></span>"
+      <div>
+        <hr class="normal-hr">
       </div>
       
-      <div class="hr-line">
-        <div>
-          <hr class="normal-hr">
-        </div>
-       
-        <div class="mid-hr">
-          <hr class="mid">
-        </div>
+    </div>
 
-        <div class="mid-hr">
-          <hr class="mid">
-        </div>
-        
-        <div>
-          <hr class="normal-hr">
-        </div>
-        
-      </div>
+    <div id="dice">
+      <i class="fa-solid fa-dice-five fa-xl"></i>
+    </div>
+  </main>
 
-      <div id="dice">
-        <i class="fa-solid fa-dice-five fa-xl"></i>
-      </div>
-    </main>
-
-    <footer class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/xiaoyoufung">Xiaoyou Fung</a>.
-    </footer>
-    
-    <script src="index.js"></script>
-  </body>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/xiaoyoufung">Xiaoyou Fung</a>.
+  </footer>
+  
+  <!-- JavaScript -->
+  <script src="index.js"></script>  
+</body>
 </html>
